@@ -2,6 +2,26 @@
   text-align: center;
 }
 
+.App-header {
+  position: relative;
+  background-color: transparent; /* or rgba(0, 0, 0, 0) */
+  padding: 4px;
+  height: 20px; 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* so the icon stays right */
+}
+
+
+/* Position icon in top right */
+.header-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
 .Project{
 
 }
@@ -11,7 +31,7 @@
 }
 
 .Contact{
-  
+
 }
 
 .App-logo {
@@ -26,14 +46,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: relative;
+  height: 0;
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+.header-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
 
 .App-link {

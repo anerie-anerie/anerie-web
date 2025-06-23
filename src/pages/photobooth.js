@@ -158,31 +158,40 @@ function Photobooth() {
   
   return (
     <div className="App">
-      <h2>📸 Photobooth</h2>
+      <h2>Welcome to the Photobooth 📸</h2>
+      <h3>Take some cute pics! You can take a max of 3 photos then download.</h3>
 
       <video ref={videoRef} autoPlay playsInline className="video" />
       <canvas ref={canvasRef} style={{ display: 'none' }} />
 
       <div style={{ marginTop: '10px' }}>
-        <button onClick={takePhoto} disabled={photos.length >= 3}>
-          {photos.length < 3 ? 'Take Photo' : 'Max 3 Photos'}
-        </button>
-        <button onClick={resetPhotos} style={{ marginLeft: '10px' }}>
-          Reset
-        </button>
-        <button
-          onClick={downloadPhotos}
-          disabled={photos.length === 0}
-          style={{ marginLeft: '10px' }}
-        >
-          Download Strip
-        </button>
-        <button onClick={goHome} style={{ marginLeft: '10px' }}>
-          Go Home
-        </button>
-      </div>
+  <button onClick={takePhoto} disabled={photos.length >= 3}>
+    {photos.length < 3 ? 'Take Photo' : 'Max 3 Photos'}
+  </button>
 
-      <div style={{ marginTop: '15px' }}>
+  <button
+    onClick={resetPhotos}
+    disabled={photos.length === 0} // ✅ only enabled if at least 1 photo
+    style={{ marginLeft: '10px' }}
+  >
+    Reset
+  </button>
+
+  <button
+    onClick={downloadPhotos}
+    disabled={photos.length !== 3} // ✅ only enabled at exactly 3 photos
+    style={{ marginLeft: '10px' }}
+  >
+    Download Strip
+  </button>
+
+  <div className="top-right">
+    <button onClick={goHome}>Go Home</button>
+  </div>
+</div>
+
+
+      <div className="bg-picker">
         <label htmlFor="bgColor">Background Color: </label>
         <select
           id="bgColor"

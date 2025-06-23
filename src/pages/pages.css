@@ -1,5 +1,12 @@
 .App {
   text-align: center;
+  position: relative;
+}
+
+button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  filter: grayscale(60%);
 }
 
 .App-header {
@@ -13,6 +20,56 @@
   justify-content: flex-end; /* so the icon stays right */
 }
 
+button {
+  background-color: #cf70a0; /* light pink */
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1rem;
+  padding: 12px 20px;
+  margin: 8px;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.top-right {
+  position: absolute;
+  top: 0vh;
+  right: 2vw;
+  z-index: 10;
+}
+
+.top-right button {
+  background-color: #cf70a0;
+  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.top-right button:hover {
+  background-color: #b3678d;;
+  transform: scale(1.05);
+}
+
+button:hover {
+  background-color: #b3678d; /* hot pink */
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
 
 /* Position icon in top right */
 .header-icon {
@@ -107,4 +164,35 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.bg-picker {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1rem;
+  color: #493545;
+}
+
+.bg-picker label {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.bg-picker select {
+  padding: 10px 14px;
+  border-radius: 15px;
+  border: 2px solid #dd8dcd;
+  background-color: #fff0f6;
+  color: #493545;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.bg-picker select:hover {
+  background-color: #fce1f1;
+  border-color: #c874c6;
 }

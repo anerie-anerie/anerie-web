@@ -85,7 +85,18 @@ button:active {
 }
 
 .project_box{
-  
+  background-color: #fdf6ff;
+  border: 0.4vh solid #caa0e8;
+  border-radius: 2vh;
+  padding: 3vh;
+  width: 28%;
+  margin: 4vw auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
 }
 
 .Hobbies{

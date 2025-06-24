@@ -13,7 +13,7 @@ function Project() {
 
       <h2>Check out all the cool projects I've done </h2>
       <h2>Always more to come...</h2>
-      
+      <div className="row">
       <div className="project_box">
         Slay in a Snap
         - context (made with xyz @ __)
@@ -26,14 +26,17 @@ function Project() {
       <div className="project_box">
         Robotics Team Website
       </div>
+      
 
       <div className="project_box">
         PosturePerfect
       </div>
-
+      </div>
+      <div className="row">
       <div className="project_box">
         Lunarhacks Website
       </div>
+      
 
       <div className="project_box">
         Iron Will
@@ -41,6 +44,7 @@ function Project() {
 
       <div className="project_box">
         Nerd or Lovebird
+      </div>
       </div>
       
     </div>

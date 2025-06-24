@@ -99,8 +99,12 @@ button:active {
   flex-direction: row;
 }
 
-.Hobbies{
+.AboutMe{
+  
 
+  min-height:100vh;
+  text-align: center;
+  position: relative;
 }
 
 .Contact{

@@ -19,7 +19,7 @@ function App() {
       <h1>Welcome to Anerie's Portfolio</h1>
       <button onClick={() => navigate('/project')}>Projects</button>
       <button onClick={() => navigate('/contact')}>Contact</button>
-      <button onClick={() => navigate('/hobbies')}>Hobbies</button>
+      <button onClick={() => navigate('/aboutme')}>About Me</button>
       
     </div>
   );

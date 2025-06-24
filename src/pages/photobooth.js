@@ -136,7 +136,7 @@ function Photobooth() {
           photoHeight,
           6
         );
-  
+        
         // Draw the image
         ctx.drawImage(
           img,
@@ -171,16 +171,16 @@ function Photobooth() {
 
   <button
     onClick={resetPhotos}
-    disabled={photos.length === 0} // ✅ only enabled if at least 1 photo
-    style={{ marginLeft: '10px' }}
+    disabled={photos.length === 0} // only enabled if at least 1 photo
+    style={{ marginLeft: '2vw' }}
   >
     Reset
   </button>
 
   <button
     onClick={downloadPhotos}
-    disabled={photos.length !== 3} // ✅ only enabled at exactly 3 photos
-    style={{ marginLeft: '10px' }}
+    disabled={photos.length !== 3} // only enabled at exactly 3 photos
+    style={{ marginLeft: '2vw' }}
   >
     Download Strip
   </button>

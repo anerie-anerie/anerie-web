@@ -80,7 +80,12 @@ button:active {
 }
 
 .Project{
+  text-align: center;
+  position: relative;
+}
 
+.project_box{
+  
 }
 
 .Hobbies{
